@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+
+    background-image: url('fond.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 26, 100, 0.8);
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.menuprincipal {
+    display: flex;
+    gap: 40px;
+}
+
+.menuprincipal h1 {
+    font-size: 20px;
+    color: #E0E0E0;
+    margin: 0;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.menuprincipal a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menuprincipal h1:hover {
+    color: #FFD54F;
+    transform: scale(1.1);
+}
+
+.body {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.title-cartes {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgba(12, 26, 100, 0.8);
+    color: #FFD54F;
+    border-radius: 25px;
+    font-size: 24px;
+}
+
+.carte-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carte {
+    width: 150px;
+    height: auto;
+    border: 2px solid rgba(12, 26, 100, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.carte p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: rgba(254, 254, 254, 0.8);
+}
+
+
+.carte img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain; /
+}
+
+footer {
+    background-color: rgba(12, 26, 100, 0.8);
+    color: #E0E0E0;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+footer span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 60px;
+    }
+
+    .menuprincipal {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menuprincipal h1 {
+        font-size: 18px;
+    }
+
+    .title-cartes {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .carte .prix {
+        font-size: 16px;
+    }
+
+    .carte {
+        width: 100%;
+        max-width: 300px;
+    }
+}
